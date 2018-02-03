@@ -8,12 +8,21 @@ const query = `{
   allToppers {
     currentpromo 
   }
+  allAdjBaseses {
+    uri
+    id
+    fullName
+    features
+    coverImg {
+      handle
+  }
+}
 }`
 
 
 export default {
   getRoutes: async () => {
-    const { allToppers } = await request(GRAPHCMS_API, query)
+    const { allToppers, allAdjBaseses } = await request(GRAPHCMS_API, query)
 
     return [
       {
@@ -22,6 +31,37 @@ export default {
         getData: () => ({
           allToppers,
         })
+      },
+      {
+        path: '/financing',
+        component: 'src/components/Financing/Financing.js'
+      },
+      {
+        path: '/blog',
+        component: 'src/components/Blog/Blog.js'
+      },
+      {
+        path: '/accessories',
+        component: 'src/components/Accessories/Accessories.js'
+      },
+      {
+        path: '/brands',
+        component: 'src/components/Brands/Brands.js'
+      },
+      {
+        path: '/about',
+        component: 'src/components/About/About.js'
+      },
+      {
+        path:'/adjustable',
+        component: 'src/components/Adjustable/Adjustable.js',
+        getData: () => ({
+          allAdjBaseses,
+        })
+      },
+      {
+        is404: true,
+        component: 'src/components/Panda404/Panda404.js'
       }
     ]
   }
