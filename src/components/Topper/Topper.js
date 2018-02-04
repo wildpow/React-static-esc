@@ -6,7 +6,7 @@ const Topper = () => {
   return (
     <Top>
       <Wrapper>
-        <TopPromo/>
+        <div>hello</div>
       </Wrapper>
       <Wrapper>
         <PhoneWrapper><Phone href="tel:1-425-512-0017">Call: (425)-512-0017</Phone></PhoneWrapper>

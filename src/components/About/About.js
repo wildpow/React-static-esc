@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Helmet } from "react-helmet";
+import { Head } from 'react-static';
 import { Main, Header, HeaderText, PicHolder, StoreImg1,
           MapImg, StoreImg2, Address, Span, RegularParagraph,
           BlueWrapper, SecondP, PopImg, PopHolder, PopNameHolder,
@@ -15,10 +15,10 @@ import pop from '../../images/funCo.png';
 const AboutComponent = () => {
   return (
     <Main>
-      {/* <Helmet>
+      <Head>
         <title>ESC: About Us</title>
         <meta name="description" content="Three of the best trained mattress sales people in Western Washington decided to open their own store; so that they could help people the way they believe they should be helped!  We are bringing back the service you are used to!"/>
-      </Helmet> */}
+      </Head>
       <Header>
         <HeaderText> Our goal is to help Snohomish County sleep like the experts do and wake up feeling better.</HeaderText>
       </Header>

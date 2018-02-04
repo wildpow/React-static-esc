@@ -2,7 +2,7 @@ import React from 'react';
 import {Main, TempurImg, StearnsImg, SealyImg,
         MainText, Footer, StyledLink, BrandWrapper,
         StearnsWrapper } from './BrandsStyles';
-import { Helmet } from "react-helmet";
+import { Head } from "react-static";
 import SealyLogo from '../../images/SealyLogo.png';
 import StearnsLogo from '../../images/StearnsLogo.png';
 import TempurLogo from '../../images/TempurLogo2.png';
@@ -11,11 +11,11 @@ import TempurLogo from '../../images/TempurLogo2.png';
 const BrandsComponent = () => {
   return (
     <Main>
-    <Helmet>
+    <Head>
         <title>ESC: Brands</title>
         <meta name="description" content="Come visit your locally owned, Everett based Sealy, Stearns and Foster & Tempur-Pedic dealer.  We have over 20 years of experience helping people sleep better on the brands we carry.  We carry 3 of the top 5 mattress brands in the US, so come see us, so we can help you sleep like the experts do!"/>
 
-      </Helmet>
+      </Head>
       <StyledLink to='/brands/tempurpedic'>
       <BrandWrapper>
         <TempurImg src={TempurLogo} alt="Tempur Logo"/>

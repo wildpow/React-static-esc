@@ -1,7 +1,7 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import {Button, MenuLines, Bar } from './MenuStyles';
 
-class MenuButton extends PureComponent {
+class MenuButton extends Component {
   render() {
     return (
         <Button type="button" role="button" onMouseUp={this.props.handleMouseDown}>

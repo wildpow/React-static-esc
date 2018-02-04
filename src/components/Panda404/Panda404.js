@@ -1,7 +1,7 @@
 import React from 'react';
 import image from '../../images/ezgif.com-optimize.gif';
 import { Main, Img, Header, Title } from './Panda404Styles';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-static';
 
 const Panda404 = () => {
   return (

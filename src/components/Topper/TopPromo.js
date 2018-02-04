@@ -1,14 +1,15 @@
-import React, { Fragment } from 'react';
-//import { withRouteData } from 'react-static'
-import { Promo } from './TopperStyles';
+import React from 'react';
+import { Promo } from './TopperStyles'
 
-export default  () => (
-  <Fragment>
-   
-    <Promo>Hellow</Promo>
-  </Fragment>
-)
 
-//withRouteData(({ allToppers })
 
-//{allToppers[0].currentpromo}
+const TopPromo = () => {
+ 
+  return (
+  <Promo>Bla</Promo>
+  )
+};
+
+
+
+export default TopPromo;

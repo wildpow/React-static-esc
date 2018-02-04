@@ -1,9 +1,9 @@
-import React, { PureComponent } from "react";
+import React, { Component } from "react";
 import { StyledLink, Nav, Wrapper, Image }  from './MenuStyles';
 import Topper from '../Topper/Topper';
 import image from '../../images/logo.png';
 
-class Menu extends PureComponent {
+class Menu extends Component {
   render() {
     var visibility = "hide";
     if (this.props.menuVisibility) {
